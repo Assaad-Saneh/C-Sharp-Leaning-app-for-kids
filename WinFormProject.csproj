@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8460CC61-2124-4F5A-AC90-032E9AAFCC31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinFormProject</RootNamespace>
+    <AssemblyName>WinFormProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Control.Draggable, Version=1.0.5049.269, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Control.Draggable.1.0.5049.269\lib\net35-Client\Control.Draggable.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssignmentMakerTaker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AssignmentMakerTaker.Designer.cs">
+      <DependentUpon>AssignmentMakerTaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignmentTaker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AssignmentTaker.Designer.cs">
+      <DependentUpon>AssignmentTaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biology.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Biology.Designer.cs">
+      <DependentUpon>Biology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrainGames.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BrainGames.Designer.cs">
+      <DependentUpon>BrainGames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EarthSunMoon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarthSunMoon.Designer.cs">
+      <DependentUpon>EarthSunMoon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form0.Designer.cs">
+      <DependentUpon>Form0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grading.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="grading.Designer.cs">
+      <DependentUpon>grading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Languages.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Languages.Designer.cs">
+      <DependentUpon>Languages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="lvl1.Designer.cs">
+      <DependentUpon>lvl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl1math.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="lvl1math.Designer.cs">
+      <DependentUpon>lvl1math.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl2language.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="lvl2language.Designer.cs">
+      <DependentUpon>lvl2language.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl2math.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="lvl2math.Designer.cs">
+      <DependentUpon>lvl2math.cs</DependentUpon>
+    </Compile>
+    <Compile Include="math.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="math.Designer.cs">
+      <DependentUpon>math.cs</DependentUpon>
+    </Compile>
+    <Compile Include="memorygame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="memorygame.Designer.cs">
+      <DependentUpon>memorygame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paint.Designer.cs">
+      <DependentUpon>Paint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="puzzlegame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="puzzlegame.Designer.cs">
+      <DependentUpon>puzzlegame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveLoad.cs" />
+    <Compile Include="science.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="science.Designer.cs">
+      <DependentUpon>science.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shapes%28lvl3math%29.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="shapes%28lvl3math%29.Designer.cs">
+      <DependentUpon>shapes%28lvl3math%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartingScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StartingScreen.Designer.cs">
+      <DependentUpon>StartingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chemistry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chemistry.Designer.cs">
+      <DependentUpon>chemistry.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AssignmentMakerTaker.resx">
+      <DependentUpon>AssignmentMakerTaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignmentTaker.resx">
+      <DependentUpon>AssignmentTaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biology.resx">
+      <DependentUpon>Biology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrainGames.resx">
+      <DependentUpon>BrainGames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EarthSunMoon.resx">
+      <DependentUpon>EarthSunMoon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form0.resx">
+      <DependentUpon>Form0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grading.resx">
+      <DependentUpon>grading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages.resx">
+      <DependentUpon>Languages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl1.resx">
+      <DependentUpon>lvl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl1math.resx">
+      <DependentUpon>lvl1math.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl2language.resx">
+      <DependentUpon>lvl2language.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl2math.resx">
+      <DependentUpon>lvl2math.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="math.resx">
+      <DependentUpon>math.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memorygame.resx">
+      <DependentUpon>memorygame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paint.resx">
+      <DependentUpon>Paint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="puzzlegame.resx">
+      <DependentUpon>puzzlegame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="science.resx">
+      <DependentUpon>science.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shapes%28lvl3math%29.resx">
+      <DependentUpon>shapes%28lvl3math%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartingScreen.resx">
+      <DependentUpon>StartingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chemistry.resx">
+      <DependentUpon>chemistry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playbutton100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kidswp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8304a9c7cce7981bf599b8c1d78bda7f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_design_1610564625456.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210113_210639.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210114_185229.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210114_143125.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent 100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backbutton100%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_design_1610658903606.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_design_1610721716206.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210115_175729.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210114_101855.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210115_141401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.1.22 All your fingers are given a number .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61Z6wKnDnjL._SL1000_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city-with-two-two-story-cartoon-houses-vector-22694694.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210116_212750.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210116_223625.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cats-dribbble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\716Fc7CPlcL._AC_SL1405_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health-benefits-of-apples-732x549-thumbnail-732x549.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210117_134303.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210117_134357.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210117_134241.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210117_134326.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210117_134455.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210117_134421.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-01-18 at 1.54.40 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-01-18 at 1.53.53 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Honeycrisp-Apple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flamingo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\funny-brown-bear-cartoon-vector-898809.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat-hair-clipart-7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cute-baby-elephant-cartoon-fat-little-sitting-smiling-36081704.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cute-cartoon-goose-isolated-vector-illustration-white-91885794.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adorable-hippo-cartoon_74769-16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartoon-stick-insect-vector-21043151.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-547403832-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1133710750-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moose-drawings-004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newt-salamander-cartoon-character-illustration-91840709.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cute-penguin-cartoon-illustration-70085596.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiger-quoll-animal-cartoon-illustration-cute-41516603.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartoon-tiger-isolated-on-white-background-vector-27900260.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hm4mrlguwksvicdwyuk1pcwage5lxx0t0fscldyfhpexdwuvqqvidd5tmmzppyka-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cute_green_viper_snake_cartoon_shirt_post_cards-rd02d141fc0f04c47bb41a77299ae9ca8_vgbaq_8byvr_512.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-501338738-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xenops-28427554.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %288%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illustration-zebra-cartoon_146562-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\800px_COLOURBOX22962119.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartoon-mother-holding-her-son-vector-7404087.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boy-and-her-brother-on-her-back-playing-together-vector-22652556.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\426-4266476_character-man-beard-uncle-png-and-vector-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cranny-clipart-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-01-20 at 8.31.15 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-01-20 at 8.27.04 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-01-20 at 8.35.58 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R388549376970afb417bd3bc3a7473d02.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\he.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\she.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\it.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\we.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you p.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\they.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b4f6c4464d3f786b2d2e4b15f178633a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fe61c596d5657476acf12582db2744e8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210124_025106.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210124_025009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210124_025033.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210124_025141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210125_093325.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210125_133148.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210125_151125.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210125_151105.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210125_133209.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-01-27 at 7.19.24 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-01-27 at 7.22.52 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210125_133221.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210125_133251.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-02-03 at 6.52.06 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asaad aam yetsabah.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asaad bel mina.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asaad el asle.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asaad lness.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buuterfly.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crab.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etoile de mer.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\octopus.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wolf.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asaad fi lsahra.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASAAD AA, YETSHAMAS.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASAAD AA, YETSHAMAS1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closed window.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrozwaaaaaaarrrr.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barade hendiye.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closed one.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closed window1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\far window.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closed window2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open window.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sahebto la asaaad.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chemistry1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chemistry2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chemistry3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chemistry21.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\periodic table.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cannon photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color_palette.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
